@@ -1,1 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BS Typing Game</title>
 
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <main class="game-container">
+
+    <!-- HEADER -->
+    <header class="header">
+      <h1>⌨️ BS Typing Game</h1>
+      <p>Learn fast. Type smart. Have fun 🚀</p>
+    </header>
+
+    <!-- GAME AREA -->
+    <section class="game-area">
+
+      <!-- TEXT DISPLAY -->
+      <div class="sentence-box" aria-label="Typing text area">
+        <div id="text"></div>
+      </div>
+
+      <!-- INPUT -->
+      <label for="input" class="sr-only">Typing Input</label>
+      <input
+        type="text"
+        id="input"
+        autocomplete="off"
+        placeholder="Start typing here..."
+        aria-label="Typing input field"
+      />
+
+      <!-- PROGRESS -->
+      <div class="progress-container" aria-label="Progress bar">
+        <div id="progress-bar"></div>
+      </div>
+
+    </section>
+
+    <button onclick="restartGame()">Restart Game 🔄</button>
+
+    <!-- STATS -->
+    <section class="stats-grid">
+
+      <article class="card score-card">
+        <h2>🏆 Score</h2>
+        <div id="score">0</div>
+        <p>Keep going!</p>
+      </article>
+
+      <article class="card accuracy-card">
+        <h2>🎯 Accuracy</h2>
+        <div id="accuracy">100%</div>
+        <p>Stay sharp!</p>
+      </article>
+
+      <article class="card speed-card">
+        <h2>⚡ Speed</h2>
+        <div id="wpm">0 WPM</div>
+        <p>Type faster!</p>
+      </article>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer-message">
+      🚀 Keep it up, Super Typer!
+    </footer>
+
+  </main>
+
+  <script src="game.js"></script>
+
+</body>
+</html>
